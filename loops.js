@@ -7,6 +7,14 @@
 // ****
 // *****
 
+const char = "*";
+
+for (let i = 0; i < 6; i++) {
+    console.log(char);
+}
+
+
+
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
@@ -25,7 +33,13 @@
 // klaar!
 // ==========================================
 
+const loop = "loop";
+const klaar = "klaar";
 
+for (let i = 0; i < 4; i++) {
+    console.log(loop);
+}
+console.log(klaar);
 
 
 
@@ -45,8 +59,20 @@
 // >> 9
 // ==========================================
 
+// const number = 0;
 
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+}
 
+for (let i = 3; i < 6; i++) {
+    console.log(">" + i);
+}
+
+for (let i = 6; i < 10; i++) {
+    console.log(">>" + i);
+
+}
 
 
 // ==========================================
