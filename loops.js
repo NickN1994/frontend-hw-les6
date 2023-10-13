@@ -10,17 +10,13 @@
 const char = "*";
 
 for (let i = 0; i < 6; i++) {
-    console.log(char);
+    console.log(char.repeat(i));
 }
-
 
 
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
-
-
-
 
 
 // ==========================================
@@ -42,7 +38,6 @@ for (let i = 0; i < 4; i++) {
 console.log(klaar);
 
 
-
 // ==========================================
 // Opdracht 3: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
 // Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
@@ -59,7 +54,7 @@ console.log(klaar);
 // >> 9
 // ==========================================
 
-// const number = 0;
+const number = 0;
 
 for (let i = 0; i < 3; i++) {
     console.log(i);
@@ -77,6 +72,20 @@ for (let i = 6; i < 10; i++) {
 
 // ==========================================
 // Opdracht 4 (BONUS): schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
+
+for (let i = 1; i < 101; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz")
+
+    } else if (i % 5 === 0) {
+        console.log("Buzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz")
+    } else
+        console.log(i)
+}
+
+
 // Echter, voor veelvouden van 3 print je "Fizz" in plaats van het nummer, en voor veelvouden van 5 print je "Buzz".
 // Voor getallen die zowel een veelvoud van 3 als van 5 zijn, print je "FizzBuzz"
 // Verwachte uitkomsten:
